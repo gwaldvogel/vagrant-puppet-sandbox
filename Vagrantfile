@@ -8,7 +8,7 @@ Vagrant.configure(2) do |config|
   # config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # bash provisioning with basic puppet installation
-  config.vm.provision "shell", path: "vagrant/install-puppet.sh"
+  config.vm.provision "shell", path: "vagrant/install-puppet-ubuntu.sh"
 
   # puppet provisioning
   config.vm.provision "puppet" do |puppet|
