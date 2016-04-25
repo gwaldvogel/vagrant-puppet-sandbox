@@ -29,7 +29,7 @@ rpm -i "${repo_path}" >/dev/null
 
 # Install Puppet...
 echo "Installing puppet"
-yum install -y puppet > /dev/null
+yum install -y puppet puppet-agent > /dev/null
 
 echo "Puppet installed!"
 
