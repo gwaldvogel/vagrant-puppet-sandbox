@@ -16,8 +16,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "puppet" do |puppet|
     puppet.environment_path = 'puppet/environments'
     puppet.environment      = 'default'
-    # puppet.manifests_path   = 'puppet/manifests'
-    # puppet.module_path      = 'puppet/modules'
-    puppet.options          = '--fileserverconfig=/vagrant/puppet/fileserver.conf --verbose --debug'
+    puppet.options          = '--fileserverconfig=/vagrant/puppet/fileserver.conf'
   end
 end
